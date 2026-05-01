@@ -1,0 +1,21 @@
+{
+  "name": "claude-code-builder",
+  "version": "0.2.0",
+  "type": "codex-skill-and-mcp",
+  "requires": [
+    "codex-cli",
+    "claude-code-cli",
+    "python"
+  ],
+  "installs": {
+    "skill": "skills/claude-code-builder/SKILL.md",
+    "mcp_server": "mcp-servers/claude-code-builder/server.py",
+    "codex_config": "config.toml",
+    "codex_agents": "AGENTS.md"
+  },
+  "mcp_tools": [
+    "claude_builder_doctor",
+    "claude_builder_run",
+    "claude_builder_parallel"
+  ]
+}
